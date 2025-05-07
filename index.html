@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./icons/logo.svg" type="image/svg+xml" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./icons/logo.svg" alt="Company Logo" />
+            </a>
+        </div>
+        <nav>
+            <ul class="main-head">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="phone"><img src="./icons/phone.svg" alt="" />+75 123 456 789</li>
+            </ul>
+        </nav>
+        <div class="auto">
+
+            <a href="login.html" class="autor"> <img src="./icons/sign.svg" alt="" class="sign2">Sign In</a>
+            <a href="register.html" class="autor2">Register</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="info">
+            <p class="s">The world's largest car dealership of the Porsche brand
+            </p>
+            <p class="ss">Find Your Perfect Vehicle Online</p>
+        </div>
+    </main>
+
+    <section class="car-type">
+        <p>Select a Body Style</p>
+        <ul class="cars">
+            <li>
+                <a href="#sedenaID">
+                    <img src="./image/pan.png" alt="Sedan" />
+                    Sedan
+                </a>
+            </li>
+            <li>
+                <a href="coupe.html">
+                    <img src="./image/911.png" alt="Coupe" />
+                    Coupe
+                </a>
+            </li>
+            <li>
+                <a href="suv-c.html">
+                    <img src="./image/mac.png" alt="SUV C" />
+                    SUV C
+                </a>
+            </li>
+            <li>
+                <a href="suv-e.html">
+                    <img src="./image/cay.png" alt="SUV E" />
+                    SUV E
+                </a>
+            </li>
+            <li>
+                <a href="hatchback.html">
+                    <img src="./image/cross.png" alt="Hatchback" />
+                    Hatchback
+                </a>
+            </li>
+            <li>
+                <a href="convertible.html">
+                    <img src="./image/cab.png" alt="Convertible" />
+                    Convertible
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="choose">
+        <p>Why Choose Us?</p>
+        <ul class="choose-list">
+            <li>
+                <img src="./icons/offers.svg" alt="Special Financing Offers" />
+                <span>Special Financing Offers</span>
+                <p>Our stress-free finance department can find financial solutions to save you money.</p>
+            </li>
+            <li>
+                <img src="./icons/price.svg" alt="Transparent Pricing" />
+                <span>Transparent Pricing</span>
+                <p>We provide clear and honest pricing with no hidden fees or surprises.</p>
+            </li>
+            <li>
+                <img src="./icons/car-service.svg" alt="Expert Car Service" />
+                <span>Expert Car Service</span>
+                <p>Our skilled technicians ensure your vehicle is serviced with the utmost care.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Most-Searched">
+        <h2>The Most Searched Cars</h2>
+        <nav class="car-types-nav">
+            <ul>
+                <li><a href="#" class="active" data-type="sedan">Sedan</a></li>
+                <li><a href="#" data-type="suv">SUV</a></li>
+                <li><a href="#" data-type="convertible">Convertible</a></li>
+                <li><a href="#" data-type="hatchback">Hatchback</a></li>
+            </ul>
+        </nav>
+        <div class="cars-container">
+
+            <!-- Sedan -->
+            <div class="car-card" data-type="sedan" id="sedenaID">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AW…</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="ss3.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="sedan">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/cayman.png" alt="Cayman Gt4 2021" class="car-image" />
+                <span class="car-title">Cayman Gt4 2021</span>
+                <p class="car-description">4.0 G5 PDK 2dr RWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>500HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$120,000</span>
+                <a href="ss.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="sedan">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/911pink.png" alt="911 GT3 Touring 2024" class="car-image" />
+                <span class="car-title">911 GT3 Touring 2024</span>
+                <p class="car-description">4.0 G5 Manual Trike 2dr RWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>510HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$165,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="sedan">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/ay.png" alt="Cayenne Diesel" class="car-image" />
+                <span class="car-title">Cayenne Diesel</span>
+                <p class="car-description">3.0 D5 PowerPulse 5dr AWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>328HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Diesel</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$75,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <!-- SUV-->
+            <div class="car-card" data-type="suv" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/ay.png" alt="Cayenne Diesel" class="car-image" />
+                <span class="car-title">Cayenne Diesel</span>
+                <p class="car-description">3.0 D5 PowerPulse 5dr AWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>328HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Diesel</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$75,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="suv" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/ay.png" alt="Cayenne Diesel" class="car-image" />
+                <span class="car-title">Cayenne Diesel</span>
+                <p class="car-description">3.0 D5 PowerPulse 5dr AWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>328HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Diesel</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$75,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="suv" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/ay.png" alt="Cayenne Diesel" class="car-image" />
+                <span class="car-title">Cayenne Diesel</span>
+                <p class="car-description">3.0 D5 PowerPulse 5dr AWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>328HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Diesel</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$75,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="suv" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/ay.png" alt="Cayenne Diesel" class="car-image" />
+                <span class="car-title">Cayenne Diesel</span>
+                <p class="car-description">3.0 D5 PowerPulse 5dr AWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>328HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Diesel</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$75,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <!-- Convertible-->
+            <div class="car-card" data-type="convertible" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/911pink.png" alt="911 GT3 Touring 2024" class="car-image" />
+                <span class="car-title">911 GT3 Touring 2024</span>
+                <p class="car-description">4.0 G5 Manual Trike 2dr RWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>510HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$165,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="convertible" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/911pink.png" alt="911 GT3 Touring 2024" class="car-image" />
+                <span class="car-title">911 GT3 Touring 2024</span>
+                <p class="car-description">4.0 G5 Manual Trike 2dr RWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>510HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$165,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="convertible" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/911pink.png" alt="911 GT3 Touring 2024" class="car-image" />
+                <span class="car-title">911 GT3 Touring 2024</span>
+                <p class="car-description">4.0 G5 Manual Trike 2dr RWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>510HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$165,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="convertible" style="display:none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/911pink.png" alt="911 GT3 Touring 2024" class="car-image" />
+                <span class="car-title">911 GT3 Touring 2024</span>
+                <p class="car-description">4.0 G5 Manual Trike 2dr RWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>510HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$165,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <!-- Hatchback-->
+
+            <div class="car-card" data-type="hatchback" style="display: none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/60yaers.png" alt="Hatchback Model" class="car-image" />
+                <span class="car-title">Hatchback Model</span>
+                <p class="car-description">1.6 TSI 5dr FWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>150HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$45,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="hatchback" style="display: none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/60yaers.png" alt="Hatchback Model" class="car-image" />
+                <span class="car-title">Hatchback Model</span>
+                <p class="car-description">1.6 TSI 5dr FWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>150HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$45,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="hatchback" style="display: none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/60yaers.png" alt="Hatchback Model" class="car-image" />
+                <span class="car-title">Hatchback Model</span>
+                <p class="car-description">1.6 TSI 5dr FWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>150HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$45,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card" data-type="hatchback" style="display: none;">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/60yaers.png" alt="Hatchback Model" class="car-image" />
+                <span class="car-title">Hatchback Model</span>
+                <p class="car-description">1.6 TSI 5dr FWD</p>
+                <ul class="car-features">
+                    <li><img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>150HP</p>
+                    </li>
+                    <li><img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li><img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>Manual</p>
+                    </li>
+                </ul>
+                <span class="car-price">$45,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+    </section>
+
+
+<!--Recommended  -->
+    <section class="Recommended">
+        <h2>Recommended Cars For You</h2>
+        <div class="cars-container">
+
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="buy">
+        <img src="./image/forest-911.png" alt="Forest Porsche 911" />
+        <div class="buy-text">
+            <p class="buy-title">Online, in-person, everywhere</p>
+            <p class="buy-description">
+                Choose from thousands of Porsche brand cars and buy online using Click & Drive or visit us at one of our
+                dealerships today.
+            </p>
+            <a href="buy.html" class="buy-button">Get Started</a>
+        </div>
+    </div>
+    <ul class="stats">
+        <li>
+            <span>
+                836M
+            </span>
+            <p>
+                CARS FOR SALEw
+            </p>
+        </li>
+        <li>
+            <span>
+                738M
+            </span>
+            <p>
+                DEALER REVIEWS
+            </p>
+        </li>
+        <li>
+            <span>
+                100M
+            </span>
+            <p>
+                VISITORS PER DAY
+            </p>
+        </li>
+        <li>
+            <span>
+                238M
+            </span>
+            <p>
+                VERIFIED DEALERS
+            </p>
+        </li>
+    </ul>
+    <section class="Upcoming">
+        <h2>Upcoming Cars</h2>
+        <div class="cars-container">
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+            <div class="car-card">
+                <button class="favorite-btn" aria-label="Add to favorites">
+                    <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6 3C5.44772 3 5 3.44772 5 4V20.382C5 21.1066 5.88954 21.5542 6.55377 21.1382L12 17.618L17.4462 21.1382C18.1105 21.5542 19 21.1066 19 20.382V4C19 3.44772 18.5523 3 18 3H6Z"
+                            fill="none" stroke="#222" stroke-width="2" />
+                    </svg>
+                </button>
+                <img src="./image/918.png" alt="918 Spyder 4.6 2015" class="car-image" />
+                <span class="car-title">918 Spyder 4.6 2015</span>
+                <p class="car-description">4.6 G5 StepTronic Momentum 2dr AWD</p>
+                <ul class="car-features">
+                    <li>
+                        <img src="./icons/speed.svg" alt="Horsepower icon" />
+                        <p>608HP</p>
+                    </li>
+                    <li>
+                        <img src="./icons/petrol.svg" alt="Fuel icon" />
+                        <p>Petrol</p>
+                    </li>
+                    <li>
+                        <img src="./icons/svt.svg" alt="Transmission icon" />
+                        <p>CVT</p>
+                    </li>
+                </ul>
+                <span class="car-price">$1,500,000</span>
+                <a href="#" class="view-details">View Details</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="app.js"> </script>
+</body>
+
+</html>

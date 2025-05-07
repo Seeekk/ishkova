@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./icons/logo.svg" alt="Company Logo" />
+      </a>
+    </div>
+  </header>
+
+  <main style="max-width:400px; margin: 100px auto; padding: 20px; background:#fff; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+    <h2>Register</h2>
+    <form id="registerForm" aria-label="Форма регистрации">
+      <input type="text" id="regUsername" placeholder="Username" required style="width:100%; padding:10px; margin-bottom:10px;" />
+      <input type="password" id="regPassword" placeholder="Password" required style="width:100%; padding:10px; margin-bottom:10px;" />
+      <button type="submit" style="padding:10px 20px;">Register</button>
+    </form>
+    <div id="registerMessage" style="margin-top:10px; color:red;"></div>
+    <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
