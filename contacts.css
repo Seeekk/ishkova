@@ -1,0 +1,128 @@
+ /* Сброс стилей */
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contact-container {
+  background: #fff;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  background: #003366;
+  color: #fff;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.contact-info p span {
+  font-weight: 600;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  padding: 40px 30px;
+}
+
+.contact-form h2 {
+  margin-bottom: 25px;
+  color: #003366;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003366;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  background-color: #003366;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0055a5;
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+    padding: 30px 20px;
+  }
+}
