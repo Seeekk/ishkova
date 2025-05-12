@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Корзина | Porsche</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    img { width: 80px; vertical-align: middle; }
+    button { padding: 5px 10px; }
+    #empty-msg { font-size: 1.2em; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Ваша корзина</h1>
+  <div id="cart-container"></div>
+  <div id="cart-total" style="margin-top:20px; font-weight: bold;"></div>
+
+  <script>
+    // Получаем корзину из localStorage или пустой массив
+    function getCart() {
+      const cart = localStorage.getItem('porscheCart');
+      return cart ? JSON.parse(cart) : [];
+    }
+
+    // Сохраняем корзину в localStorage
+    function saveCart(cart) {
+      localStorage.setItem('porscheCart', JSON.stringify(cart));
+    }
+
+    // Удаляем машину из корзины по id
+    function removeFromCart(id) {
+      let cart = getCart();
+      cart = cart.filter(item => item.id !== id);
+      saveCart(cart);
+      renderCart();
+    }
+
+    // Отрисовка корзины
+    function renderCart() {
+      const cart = getCart();
+      const container = document.getElementById('cart-container');
+      const totalDiv = document.getElementById('cart-total');
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p id="empty-msg">Корзина пуста.</p>';
+        totalDiv.textContent = '';
+        return;
+      }
+
+      let html = '<table><thead><tr><th>Модель</th><th>Цена</th><th>Действия</th></tr></thead><tbody>';
+      let total = 0;
+
+      for (const car of cart) {
+        html += `<tr>
+          <td><img src="./image/${car.image}" alt="${car.title}"> ${car.title}</td>
+          <td>$${car.price.toLocaleString()}</td>
+          <td><button onclick="removeFromCart(${car.id})">Удалить</button></td>
+        </tr>`;
+        total += car.price;
+      }
+
+      html += '</tbody></table>';
+      container.innerHTML = html;
+      totalDiv.textContent = `Итого: $${total.toLocaleString()}`;
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>

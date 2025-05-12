@@ -196,3 +196,18 @@ function escapeHtml(text) {
 }
 
 loadReviews();
+
+
+function addToCart(car) {
+  let cart = localStorage.getItem('porscheCart');
+  cart = cart ? JSON.parse(cart) : [];
+
+  // Проверяем, есть ли уже машина в корзине по id
+  if (!cart.find(item => item.id === car.id)) {
+    cart.push(car);
+    localStorage.setItem('porscheCart', JSON.stringify(cart));
+    alert(`Машина "${car.title}" добавлена в корзину`);
+  } else {
+    alert('Эта машина уже в корзине');
+  }
+}
