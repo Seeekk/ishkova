@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porsche 911 Carrera Targa</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./icons/logo.svg" alt="Company Logo" />
+            </a>
+        </div>
+    </header>
+
+
+    <section id="pageInfo">
+        <div class="info-cayman">
+            <img src="./image/911 TARGA.webp" alt="Porsche 911 Carrera Targa" />
+            <div class="info-details">
+                <ul class="labels">
+                    <li>Цена:</li>
+                    <li>Тип двигателя:</li>
+                    <li>Мощность:</li>
+                    <li>Коробка передач:</li>
+                    <li>Тип привода:</li>
+                </ul>
+                <ul class="values">
+                    <li>150,000 - 220,000$</li>
+                    <li>бензиновый</li>
+                    <li>380-385 л.c.</li>
+                    <li>Робот</li>
+                    <li>Задний</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="title">Porsche 911 Carrera Targa - цены, комплектации и характеристики</p>
+
+        <div class="specs">
+            <ul class="specs-labels">
+                <li>Комплектация</li>
+                <li>Cтатус</li>
+                <li>Цена</li>
+                <li>Двигатель (л.с.)</li>
+                <li>КПП</li>
+                <li>Привод</li>
+                <li>Разгон (с.)</li>
+                <li>Расход: Г | Т | С</li>
+                <li>Макс. Скорость</li>
+            </ul>
+            <ul class="specs-values">
+                <li>Classic Targa</li>
+                <li>В наличии</li>
+                <li>180,000$</li>
+                <li>380</li>
+                <li>Робот</li>
+                <li>Задний</li>
+                <li>4.4С</li>
+                <li>15Л | 9Л | 11Л</li>
+                <li>280Км/ч</li>
+            </ul>
+            <ul class="specs-values">
+                <li>75 Anniversary</li>
+                <li>Распроданы</li>
+                <li>205,000$</li>
+                <li>385</li>
+                <li>Робот</li>
+                <li>Задний</li>
+                <li>4.2С</li>
+                <li>15Л | 9Л | 11Л</li>
+                <li>300Км/ч</li>
+            </ul>
+        </div>
+
+        <section class="gallery-section" aria-label="Фотогалерея Porsche 911 Carrera Targa">
+            <h2>Фотогалерея Porsche 911 Carrera Targa</h2>
+            <div class="gallery">
+                <img src="./gallary/911ctagfront.webp" alt="Porsche 911 Carrera Targa 1" class="gallery-img" tabindex="0" />
+                <img src="./gallary/911ctagleft.jpg" alt="Porsche 911 Carrera Targa 2" class="gallery-img" tabindex="0" />
+                <img src="./gallary/911ctagright.jpg" alt="Porsche 911 Carrera Targa 3" class="gallery-img" tabindex="0" />
+                <img src="./gallary/911ctagback.webp" alt="Porsche 911 Carrera Targa 4" class="gallery-img" tabindex="0" />
+                <img src="./gallary/911ctaginside.webp" alt="Porsche 911 Carrera Targa 5" class="gallery-img" tabindex="0" />
+                
+            </div>
+        </section>
+    </section>
+
+    <section id="pageReviews" style="display:none;">
+        <section class="reviews-section" aria-label="Отзывы покупателей">
+            <h2>Отзывы покупателей</h2>
+            <form id="reviewForm" aria-label="Форма добавления отзыва">
+                <input type="text" id="nameInput" placeholder="Ваше имя" required aria-required="true" />
+                <textarea id="reviewInput" rows="4" placeholder="Ваш отзыв" required aria-required="true"></textarea>
+
+                <div class="rating" role="radiogroup" aria-label="Рейтинг">
+                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <label for="star5" title="5 звезд">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 звезды">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 звезды">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 звезды">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 звезда">&#9733;</label>
+                </div>
+
+                <button type="submit">Добавить отзыв</button>
+            </form>
+            <div id="reviewsContainer" aria-live="polite" aria-relevant="additions">
+
+            </div>
+        </section>
+    </section>
+
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Увеличенное изображение">
+        <span class="modal-close" id="modalClose" role="button" aria-label="Закрыть">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Увеличенное изображение" />
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    <nav aria-label="Основная навигация">
+        <button id="btnInfo" class="active" aria-current="page">Информация</button>
+        <button id="btnReviews">Отзывы</button>
+        <button onclick='addToCart({id:125, title:"911 Carrera Targa", price:205000, image:"911 TARGA.webp"})'
+                    class="cart-btn">В корзину</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>

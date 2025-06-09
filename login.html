@@ -3,10 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sign In</title>
-  <link rel="stylesheet" href="style2.css" />
+  <title>Sign In / Register with Video Background</title>
+  <style>
+    /* Сброс отступов и высоты для body и html */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Видео на заднем фоне */
+    #backgroundVideo {
+      position: fixed;
+      top: 0;
+      left: 0; 
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Основной контейнер с формой */
+    main {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    header .logo {
+      max-width: 150px;
+      margin: 20px auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Стили для ссылок */
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Стили для кнопок и инпутов */
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #signInMessage, #registerMessage {
+      margin-top: 10px;
+      color: red;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Видео на заднем фоне -->
+  <video autoplay muted loop playsinline id="backgroundVideo">
+    <source src="./gallary/reg.mp4" type="video/mp4" />
+    <!-- Можно добавить другие форматы для совместимости -->
+    Ваш браузер не поддерживает видео.
+  </video>
+
   <header>
     <div class="logo">
       <a href="index.html">
@@ -15,14 +108,14 @@
     </div>
   </header>
 
-  <main style="max-width:400px; margin: 100px auto; padding: 20px; background:#fff; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+  <main>
     <h2>Sign In</h2>
     <form id="signInForm" aria-label="Форма входа">
-      <input type="text" id="signInUsername" placeholder="Username" required style="width:100%; padding:10px; margin-bottom:10px;" />
-      <input type="password" id="signInPassword" placeholder="Password" required style="width:100%; padding:10px; margin-bottom:10px;" />
-      <button type="submit" style="padding:10px 20px;">Sign In</button>
+      <input type="text" id="signInUsername" placeholder="Username" required />
+      <input type="password" id="signInPassword" placeholder="Password" required />
+      <button type="submit">Sign In</button>
     </form>
-    <div id="signInMessage" style="margin-top:10px; color:red;"></div>
+    <div id="signInMessage"></div>
     <p>Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
   </main>
 

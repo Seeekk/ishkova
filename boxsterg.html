@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Porsche Boxster GT4</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./icons/logo.svg" alt="Company Logo" />
+            </a>
+        </div>
+    </header>
+
+
+    <section id="pageInfo">
+        <div class="info-cayman">
+            <img src="./image/boxer.jfif" alt="Porsche Boxster GT4" />
+            <div class="info-details">
+                <ul class="labels">
+                    <li>Цена=:</li>
+                    <li>Тип двигателя:</li>
+                    <li>Мощность:</li>
+                    <li>Коробка передач:</li>
+                    <li>Тип привода:</li>
+                </ul>
+                <ul class="values">
+                    <li>190,000 - 215,000 $</li>
+                    <li>Бензин</li>
+                    <li>400 л.c.</li>
+                    <li>Механика, Робот</li>
+                    <li>Задний</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="title">Porsche Boxster GT4 - цены, комплектации и характеристики</p>
+
+        <div class="specs">
+            <ul class="specs-labels">
+                <li>Комплектация</li>
+                <li>Cтатус</li>
+                <li>Цена</li>
+                <li>Двигатель (л.с.)</li>
+                <li>КПП</li>
+                <li>Привод</li>
+                <li>Разгон (с.)</li>
+                <li>Расход: Г | Т | С</li>
+                <li>Макс. Скорость</li>
+            </ul>
+            <ul class="specs-values">
+                <li>Auethitec</li>
+                <li>Под заказ</li>
+                <li>190,000$</li>
+                <li>400ЛС</li>
+                <li>Механика</li>
+                <li>Задний</li>
+                <li>4.5С</li>
+                <li>20Л | 11Л | 17Л</li>
+                <li>288Км/ч</li>
+            </ul>
+            <ul class="specs-values">
+                <li>Extrim</li>
+                <li>В наличии</li>
+                <li>210,000$</li>
+                <li>400ЛС</li>
+                <li>Робот</li>
+                <li>Задний</li>
+                <li>4.0С</li>
+                <li>19Л | 10Л | 15Л</li>
+                <li>300Км/ч</li>
+            </ul>
+        </div>
+
+        <section class="gallery-section" aria-label="Фотогалерея Porsche Boxster GT4">
+            <h2>Фотогалерея Porsche Boxster GT4</h2>
+            <div class="gallery">
+                <img src="./gallary/boxgfront.webp" alt="Porsche Boxster GT4 1" class="gallery-img" tabindex="0" />
+                <img src="./gallary/boxgleft.jpg" alt="Porsche Boxster GT4 2" class="gallery-img" tabindex="0" />
+                <img src="./gallary/boxgright.png" alt="Porsche Boxster GT4 3" class="gallery-img" tabindex="0" />
+                <img src="./gallary/boxgback.webp" alt="Porsche Boxster GT4 4" class="gallery-img" tabindex="0" />
+                <img src="./gallary/boxginside.jpg" alt="Porsche Boxster GT4 5" class="gallery-img" tabindex="0" />
+                
+            </div>
+        </section>
+    </section>
+
+    <section id="pageReviews" style="display:none;">
+        <section class="reviews-section" aria-label="Отзывы покупателей">
+            <h2>Отзывы покупателей</h2>
+            <form id="reviewForm" aria-label="Форма добавления отзыва">
+                <input type="text" id="nameInput" placeholder="Ваше имя" required aria-required="true" />
+                <textarea id="reviewInput" rows="4" placeholder="Ваш отзыв" required aria-required="true"></textarea>
+
+                <div class="rating" role="radiogroup" aria-label="Рейтинг">
+                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <label for="star5" title="5 звезд">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 звезды">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 звезды">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 звезды">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 звезда">&#9733;</label>
+                </div>
+
+                <button type="submit">Добавить отзыв</button>
+            </form>
+            <div id="reviewsContainer" aria-live="polite" aria-relevant="additions">
+
+            </div>
+        </section>
+    </section>
+
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Увеличенное изображение">
+        <span class="modal-close" id="modalClose" role="button" aria-label="Закрыть">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Увеличенное изображение" />
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    <nav aria-label="Основная навигация">
+        <button id="btnInfo" class="active" aria-current="page">Информация</button>
+        <button id="btnReviews">Отзывы</button>
+         <button onclick='addToCart({id:123, title:"Boxster GT4", price:190000, image:"boxer.jfif"})'
+                    class="cart-btn">В корзину</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>

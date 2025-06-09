@@ -21,12 +21,10 @@
         <nav>
             <ul class="main-head">
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="listings.html">Объявления о продаже</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="pages.html">Страницы</a></li>
-                <li><a href="cart.html">О нас</a></li>
+                <li><a href="https://porschecarshistory.com/">Блог</a></li>
+                <li><a href="info.html">О нас</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="cart.html">Корзина</a></li> <!-- Добавленная корзина -->
+                <li><a href="cart.html">Корзина</a></li>
                 <li class="phone"><img src="./icons/phone.svg" alt="" />+75 123 456 789</li>
 
             </ul>
@@ -56,31 +54,31 @@
                 </a>
             </li>
             <li>
-                <a href="coupe.html">
+                <a href="#sedaneID">
                     <img src="./image/911.png" alt="Coupe" />
                     Купе
                 </a>
             </li>
             <li>
-                <a href="suv-c.html">
+                <a href="#sedaneID">
                     <img src="./image/mac.png" alt="SUV C" />
                     Компакт кроссовер
                 </a>
             </li>
             <li>
-                <a href="suv-e.html">
+                <a href="#sedaneID">
                     <img src="./image/cay.png" alt="SUV E" />
                     Полноразмерный кроссовер
                 </a>
             </li>
             <li>
-                <a href="hatchback.html">
+                <a href="#sedaneID">
                     <img src="./image/cross.png" alt="Hatchback" />
                     Хэтчбек
                 </a>
             </li>
             <li>
-                <a href="convertible.html">
+                <a href="#sedaneID">
                     <img src="./image/cab.png" alt="Convertible" />
                     Кабриолет
                 </a>
@@ -125,6 +123,8 @@
 
             <!-- Coupe -->
             <div class="car-card" data-type="sedan" id="sedaneID">
+                <button onclick='addToCart({id:116, title:"918 Spyder", price:1700000, image:"918.png"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -151,6 +151,8 @@
             </div>
 
             <div class="car-card" data-type="sedan">
+                <button onclick='addToCart({id:115, title:"Cayman GT4 Clubsport", price:220000, image:"cayman.png"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -169,7 +171,7 @@
                         <p>Бензин</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CVT</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$220,000</span>
@@ -177,6 +179,8 @@
             </div>
 
             <div class="car-card" data-type="sedan">
+                <button onclick='addToCart({id:116, title:"911 GT3 Touring", price:245000, image:"911pink.png"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -195,7 +199,7 @@
                         <p>Бензин</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CVT</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$245,000</span>
@@ -203,6 +207,8 @@
             </div>
 
             <div class="car-card" data-type="sedan">
+                <button onclick='addToCart({id:117, title:"Cayman S", price:75000, image:"cayman s.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -234,6 +240,8 @@
 
             <!-- SUV-->
             <div class="car-card" data-type="suv" style="display:none;">
+                <button onclick='addToCart({id:118, title:"Cayenne E-Hybrid", price:130000, image:"cayenne zel.jpg"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -252,14 +260,16 @@
                         <p>Гибрид</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$130,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="cayenneehyb.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="suv" style="display:none;">
+                <button onclick='addToCart({id:119, title:"Cayenne Turbo GT", price:275000, image:"Cayenne-Coupe-Turbo-GT-.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -278,14 +288,16 @@
                         <p>Бензин</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$275,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="cayenneturbogt.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="suv" style="display:none;">
+                <button onclick='addToCart({id:120, title:"Macan EV", price:150000, image:"macan ev.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -304,14 +316,16 @@
                         <p>Электро</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Автомат</p>
                     </li>
                 </ul>
                 <span class="car-price">$150,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="macanev.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="suv" style="display:none;">
+                <button onclick='addToCart({id:121, title:"Macan S", price:105000, image:"macan ss.jpg"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -334,11 +348,13 @@
                     </li>
                 </ul>
                 <span class="car-price">$105,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="macans.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <!-- Convertible-->
             <div class="car-card" data-type="convertible" style="display:none;">
+                <button onclick='addToCart({id:122, title:"Boxster 718", price:65000, image:"boxster.avif"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -361,10 +377,12 @@
                     </li>
                 </ul>
                 <span class="car-price">$65,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="boxster718.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="convertible" style="display:none;">
+                <button onclick='addToCart({id:123, title:"Boxster GT4", price:190000, image:"boxer.jfif"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -387,10 +405,12 @@
                     </li>
                 </ul>
                 <span class="car-price">$190,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="boxsterg.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="convertible" style="display:none;">
+                <button onclick='addToCart({id:124, title:"911 Turbo S Cabrio", price:265000, image:"911 t cab.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -413,10 +433,12 @@
                     </li>
                 </ul>
                 <span class="car-price">$265,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="911cabrio.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="convertible" style="display:none;">
+                <button onclick='addToCart({id:125, title:"911 Carrera Targa", price:205000, image:"911 TARGA.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -439,12 +461,14 @@
                     </li>
                 </ul>
                 <span class="car-price">$205,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="911cartar.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <!-- Hatchback-->
 
             <div class="car-card" data-type="hatchback" style="display: none;">
+                <button onclick='addToCart({id:126, title:"Panamera Turbo S", price:275000, image:"panamera_cross.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -463,14 +487,16 @@
                         <p>Бензин</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$275,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="panturbo.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="hatchback" style="display: none;">
+                <button onclick='addToCart({id:127, title:"Panamera 4S E-Hybrid Cross", price:215000, image:"panamera 4s e hybrid.jpg"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -489,14 +515,16 @@
                         <p>Гибрид</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$215,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="panhyb.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="hatchback" style="display: none;">
+                <button onclick='addToCart({id:128, title:"Taycan", price:135000, image:"taycan c.jfif"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -515,14 +543,16 @@
                         <p>Электро</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Автомат</p>
                     </li>
                 </ul>
                 <span class="car-price">$135,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="taycan.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card" data-type="hatchback" style="display: none;">
+                <button onclick='addToCart({id:129, title:"Taycan Turbo GT", price:325000, image:"taycan turbo.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -541,11 +571,11 @@
                         <p>Электро</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Автомат</p>
                     </li>
                 </ul>
                 <span class="car-price">$325,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="tayturbogt.html" class="view-details">Посмотреть детали</a>
             </div>
 
     </section>
@@ -557,6 +587,8 @@
         <div class="cars-container">
 
             <div class="car-card">
+                <button onclick='addToCart({id:130, title:"911 GT3 Weissach Package", price:315000, image:"911 gt3 rs weissach.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -575,14 +607,16 @@
                         <p>Бензин</p>
                     </li>
                     <li><img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CVT</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$315,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="weic.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card">
+                <button onclick='addToCart({id:131, title:"911 GT2 RS MR", price:800000, image:"911 gt2rs mr.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -604,14 +638,16 @@
                     </li>
                     <li>
                         <img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CVT</p>
+                        <p>Механика</p>
                     </li>
                 </ul>
                 <span class="car-price">$800,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="gt2rsmr.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card">
+                <button onclick='addToCart({id:132, title:"911 Rocket 900 By Brabus", price:900000, image:"brabus.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -637,11 +673,12 @@
                     </li>
                 </ul>
                 <span class="car-price">$900,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <a href="brabus.html" class="view-details">Посмотреть детали</a>
             </div>
 
             <div class="car-card">
-                
+                <button onclick='addToCart({id:133, title:"911 Turbo Florio BY Ruf", price:400000, image:"ruf.webp"})'
+                    class="cart-btn">В корзину</button>
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -663,11 +700,11 @@
                     </li>
                     <li>
                         <img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CVT</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
-                <span class="car-price">$400,000</span>
-                <a href="#" class="view-details">Посмотреть детали</a>
+                <span class="car-price">$1.400,000</span>
+                <a href="ruf.html" class="view-details">Посмотреть детали</a>
             </div>
 
         </div>
@@ -682,7 +719,6 @@
                 в одном из наших
                 дилерских центров уже сегодня.
             </p>
-            <a href="buy.html" class="buy-button">Начать</a>
         </div>
     </div>
     <ul class="stats">
@@ -723,8 +759,7 @@
         <h2>Грядущие новинки</h2>
         <div class="cars-container">
             <div class="car-card">
-                <button onclick='addToCart({id:1, title:"Boxster EV", price:220000, image:"box ev.jpg"})'
-                    class="cart-btn">В корзину</button>
+                
 
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -747,7 +782,7 @@
                     </li>
                     <li>
                         <img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Автомат</p>
                     </li>
                 </ul>
                 <span class="car-price">От $180,000</span>
@@ -755,8 +790,7 @@
             </div>
 
             <div class="car-card">
-                  <button onclick='addToCart({id:1, title:"Boxster EV", price:220000, image:"box ev.jpg"})'
-                    class="cart-btn">В корзину</button>
+                  
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -778,15 +812,14 @@
                     </li>
                     <li>
                         <img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Автомат</p>
                     </li>
                 </ul>
                 <span class="car-price">От $230,000</span>
                 <a href="#" class="view-details">Посмотреть детали</a>
             </div>
             <div class="car-card">
-                  <button onclick='addToCart({id:1, title:"Boxster EV", price:220000, image:"box ev.jpg"})'
-                    class="cart-btn">В корзину</button>
+                
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -808,15 +841,14 @@
                     </li>
                     <li>
                         <img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Автомат</p>
                     </li>
                 </ul>
                 <span class="car-price">От $150,000</span>
                 <a href="#" class="view-details">Посмотреть детали</a>
             </div>
             <div class="car-card">
-                  <button onclick='addToCart({id:1, title:"Boxster EV", price:220000, image:"box ev.jpg"})'
-                    class="cart-btn">В корзину</button>
+                
                 <button class="favorite-btn" aria-label="Add to favorites">
                     <svg class="bookmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -838,7 +870,7 @@
                     </li>
                     <li>
                         <img src="./icons/svt.svg" alt="Transmission icon" />
-                        <p>CTV</p>
+                        <p>Робот</p>
                     </li>
                 </ul>
                 <span class="car-price">$2,000,000</span>
@@ -846,6 +878,34 @@
             </div>
         </div>
     </section>
+
+
+
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/Porsche" target="_blank" rel="noopener noreferrer">
+                <img src="./icons/face.svg" alt="Facebook Porsche">
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/Porsche" target="_blank" rel="noopener noreferrer">
+                <img src="./icons/twitter.svg" alt="Twitter Porsche">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/porsche/" target="_blank" rel="noopener noreferrer">
+                <img src="./icons/insta.svg" alt="Instagram Porsche">
+            </a>
+        </li>
+        <li>
+            <a href="https://t.me/porsche" target="_blank" rel="noopener noreferrer">
+                <img src="./icons/tg.svg" alt="Telegram Porsche">
+            </a>
+        </li>
+    </ul>
+</footer>
 
 
 

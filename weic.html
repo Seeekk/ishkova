@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porsche 911 GT3 Weissach Package</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./icons/logo.svg" alt="Company Logo" />
+            </a>
+        </div>
+    </header>
+
+
+    <section id="pageInfo">
+        <div class="info-cayman">
+            <img src="./image/911 gt3 rs weissach.webp" alt="Porsche 911 GT3 Weissach Package" />
+            <div class="info-details">
+                <ul class="labels">
+                    <li>Цена:</li>
+                    <li>Тип двигателя:</li>
+                    <li>Мощность:</li>
+                    <li>Коробка передач:</li>
+                    <li>Тип привода:</li>
+                </ul>
+                <ul class="values">
+                    <li>315,000$</li>
+                    <li>Бензин</li>
+                    <li>530 л.c.</li>
+                    <li>Робот</li>
+                    <li>Задний</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="title">Porsche 911 GT3 Weissach Package - цены, комплектации и характеристики</p>
+
+        <div class="specs">
+            <ul class="specs-labels">
+                <li>Комплектация</li>
+                <li>Cтатус</li>
+                <li>Цена</li>
+                <li>Двигатель (л.с.)</li>
+                <li>КПП</li>
+                <li>Привод</li>
+                <li>Разгон (с.)</li>
+                <li>Расход: Г | Т | С</li>
+                <li>Макс. Скорость</li>
+            </ul>
+            <ul class="specs-values">
+                <li>Weissach Package</li>
+                <li>Под заказ</li>
+                <li>315,000$</li>
+                <li>530</li>
+                <li>Робот</li>
+                <li>Задний</li>
+                <li>3.3С</li>
+                <li>17Л | 9Л | 12Л</li>
+                <li>320Км/ч</li>
+            </ul>
+        </div>
+
+        <section class="gallery-section" aria-label="Фотогалерея Porsche 911 GT3 Weissach Package">
+            <h2>Фотогалерея Porsche 911 GT3 Weissach Package</h2>
+            <div class="gallery">
+                <img src="./gallary/weicfront.jpg" alt="Porsche 911 GT3 Weissach Package 1" class="gallery-img" tabindex="0" />
+                <img src="./gallary/weichigh.jfif" alt="Porsche 911 GT3 Weissach Package 2" class="gallery-img" tabindex="0" />
+                <img src="./gallary/weicleft.webp" alt="Porsche 911 GT3 Weissach Package 3" class="gallery-img" tabindex="0" />
+                <img src="./gallary/weicback.jpg" alt="Porsche 911 GT3 Weissach Package 4" class="gallery-img" tabindex="0" />
+                <img src="./gallary/weicinside.jpg" alt="Porsche 911 GT3 Weissach Package 5" class="gallery-img" tabindex="0" />
+                
+            </div>
+        </section>
+    </section>
+
+    <section id="pageReviews" style="display:none;">
+        <section class="reviews-section" aria-label="Отзывы покупателей">
+            <h2>Отзывы покупателей</h2>
+            <form id="reviewForm" aria-label="Форма добавления отзыва">
+                <input type="text" id="nameInput" placeholder="Ваше имя" required aria-required="true" />
+                <textarea id="reviewInput" rows="4" placeholder="Ваш отзыв" required aria-required="true"></textarea>
+
+                <div class="rating" role="radiogroup" aria-label="Рейтинг">
+                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <label for="star5" title="5 звезд">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 звезды">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 звезды">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 звезды">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 звезда">&#9733;</label>
+                </div>
+
+                <button type="submit">Добавить отзыв</button>
+            </form>
+            <div id="reviewsContainer" aria-live="polite" aria-relevant="additions">
+
+            </div>
+        </section>
+    </section>
+
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Увеличенное изображение">
+        <span class="modal-close" id="modalClose" role="button" aria-label="Закрыть">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Увеличенное изображение" />
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    <nav aria-label="Основная навигация">
+        <button id="btnInfo" class="active" aria-current="page">Информация</button>
+        <button id="btnReviews">Отзывы</button>
+          <button onclick='addToCart({id:130, title:"911 GT3 Weissach Package", price:315000, image:"911 gt3 rs weissach.webp"})'
+                    class="cart-btn">В корзину</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>

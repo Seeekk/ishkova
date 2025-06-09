@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="icon" href="./icons/logo.svg" type="image/svg+xml" />  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>О нас - Porsche</title>
+<style>
+  /* Общие стили */
+  /* Общие стили */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  /* Левая часть: информация */
+  .info-section {
+    flex: 1;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0d47a1; /* фирменный красный Porsche */
+    margin-bottom: 25px;
+    font-family: 'Porsche Next', sans-serif;
+  }
+  .info-section p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    color: #333333;
+  }
+  .info-section p.highlight {
+    color: #0d47a1; /* мягкий акцент красного */
+    font-weight: 600;
+  }
+
+  /* Правая часть: видео и галерея */
+  .media-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 35px;
+    background: #fafafa;
+    border-radius: 0 12px 12px 0;
+    box-shadow: inset 0 0 15px #eee;
+  }
+
+  /* Видео */
+  .media-section video {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow:  0 8px 20px rgba(90, 9, 241, 0.15);
+    outline: none;
+    background: #000;
+  }
+
+  /* Галерея */
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+  }
+  .photo-gallery img {
+    width: calc(50% - 18px);
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(90, 9, 241, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  /* Хаотичные повороты для живого эффекта */
+  .photo-gallery img:nth-child(1) {
+    transform: rotate(-5deg);
+  }
+  .photo-gallery img:nth-child(2) {
+    transform: rotate(4deg);
+  }
+  .photo-gallery img:nth-child(3) {
+    transform: rotate(-3deg);
+  }
+  .photo-gallery img:nth-child(4) {
+    transform: rotate(6deg);
+  }
+  /* При наведении — увеличение и выравнивание */
+  .photo-gallery img:hover {
+    transform: scale(1.07) rotate(0deg);
+    box-shadow: 0 14px 40px rgba(5, 21, 241, 0.5);
+    z-index: 10;
+  }
+
+  /* Адаптив */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .media-section {
+      border-radius: 0 0 12px 12px;
+      padding: 30px 20px;
+    }
+    .info-section {
+      padding: 30px 20px;
+    }
+    .photo-gallery img {
+      width: 48%;
+    }
+  }
+  @media (max-width: 480px) {
+    .photo-gallery img {
+      width: 100%;
+      transform: rotate(0deg) !important;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1) !important;
+      box-shadow: none !important;
+      z-index: 1 !important;
+    }
+  }
+  .btn-home {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  background-color: #0d47a1; 
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(66, 15, 250, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  outline-offset: 2px;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+  background-color: #4f28fc; /* темный оттенок красного при наведении */
+  box-shadow: 0 10px 30px rgba(32, 10, 233, 0.8);
+  transform: scale(1.05);
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .btn-home {
+    position: static;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+}
+
+</style>
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <section class="info-section" aria-label="Информация о компании Porsche">
+     <a href="/" class="btn-home" aria-label="Вернуться на главную страницу">Вернуться на главную</a>
+    <h1>О нас</h1>
+    <p>Добро пожаловать в наш официальный дилерский центр Porsche — место, где страсть к совершенству встречается с инновациями и непревзойденным качеством.</p>
+    <p>Мы предлагаем широкий ассортимент новых автомобилей Porsche, включая легендарные модели 911, Cayenne, Taycan и многие другие.</p>
+    <p class="highlight">Наши эксперты помогут вам выбрать идеальный автомобиль, учитывая ваши пожелания и стиль жизни.</p>
+    <p>Покупая у нас, вы получаете не только автомобиль премиум-класса, но и полный комплекс сервисного обслуживания, гарантию и поддержку на всех этапах эксплуатации.</p>
+  </section>
+
+  <section class="media-section" aria-label="Видео и галерея Porsche">
+    <video controls preload="metadata" poster="porsche-video-poster.jpg" aria-label="Видеообзор автомобилей Porsche">
+      <source src="./gallary/reg.mp4" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
+
+    <div class="photo-gallery" aria-label="Галерея фотографий автомобилей Porsche">
+      <img src="./gallary/panhybright.webp" alt="Porsche 911 на дороге" loading="lazy" />
+      <img src="./gallary/cayturbogtfront.jpg" alt="Интерьер Porsche Taycan" loading="lazy" />
+      <img src="./gallary/weicleft.webp" alt="Porsche Cayenne в движении" loading="lazy" />
+      <img src="./image/60yaers.png" alt="Porsche Panamera вид сбоку" loading="lazy" />
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

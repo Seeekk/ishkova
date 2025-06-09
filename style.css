@@ -559,3 +559,46 @@ nav {
   user-select: none;
 }
 
+
+footer {
+  background-color: #050B20; /* Темный фон футера */
+  padding: 20px 40px;
+  color: #ecf0f1; /* Светлый цвет текста */
+  font-family: 'Arial', sans-serif;
+}
+
+footer ul {
+  list-style: none; /* Убираем маркеры списка */
+  display: flex; /* Горизонтальное расположение элементов */
+  justify-content: space-around; /* Равномерное распределение */
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: flex;
+  align-items: center; /* Вертикальное выравнивание текста и изображения */
+  gap: 10px; /* Расстояние между текстом и картинкой */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer ul li img {
+  width: 24px; /* Размер иконок */
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Белые иконки на темном фоне */
+  transition: filter 0.3s ease;
+}
+
+footer ul li:hover {
+  color: #2400ee; /* Цвет текста при наведении */
+}
+
+footer ul li:hover img {
+  filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(150deg); /* Изменение цвета иконки при наведении */
+}
+
+
+
+

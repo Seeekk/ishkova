@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porsche Macan EV</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./icons/logo.svg" alt="Company Logo" />
+            </a>
+        </div>
+    </header>
+
+
+    <section id="pageInfo">
+        <div class="info-cayman">
+            <img src="./image/macan ev.webp" alt="Porsche Macan EV" />
+            <div class="info-details">
+                <ul class="labels">
+                    <li>Цена=:</li>
+                    <li>Тип двигателя:</li>
+                    <li>Мощность:</li>
+                    <li>Коробка передач:</li>
+                    <li>Тип привода:</li>
+                </ul>
+                <ul class="values">
+                    <li>150,000 - 200,000 $</li>
+                    <li>Электро</li>
+                    <li>408-500 л.c.</li>
+                    <li>Автомат</li>
+                    <li>Полный</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="title">Porsche Macan EV - цены, комплектации и характеристики</p>
+
+        <div class="specs">
+            <ul class="specs-labels">
+                <li>Комплектация</li>
+                <li>Cтатус</li>
+                <li>Комплектация</li>
+                <li>Цена</li>
+                <li>Двигатель (л.с.)</li>
+                <li>КПП</li>
+                <li>Привод</li>
+                <li>Разгон (с.)</li>
+                <li>Расход: Г | Т | С</li>
+                <li>Макс. Скорость</li>
+            </ul>
+            <ul class="specs-values">
+                <li>Standart</li>
+                <li>В наличии</li>
+                <li>150,000$</li>
+                <li>408ЛС</li>
+                <li>Автомат</li>
+                <li>Полный</li>
+                <li>4.6С</li>
+                <li>Запас хода 420 км(WLTP)</li>
+                <li>220Км/ч</li>
+            </ul>
+            <ul class="specs-values">
+                <li>Perfomance</li>
+                <li>Под привоз(только по предзаказу)</li>
+                <li>200,000$</li>
+                <li>500ЛС</li>
+                <li>Автомат</li>
+                <li>Полный</li>
+                <li>3.9С</li>
+                <li>Запас хода 500 км(WLTP)</li>
+                <li>250Км/ч</li>
+            </ul>
+        </div>
+
+        <section class="gallery-section" aria-label="Фотогалерея Porsche Macan EV">
+            <h2>Фотогалерея Porsche Macan EV</h2>
+            <div class="gallery">
+                <img src="./gallary/macanevright.jpg" alt="Porsche Macan EV 1" class="gallery-img" tabindex="0" />
+                <img src="./gallary/macanevleft.jpg" alt="Porsche Macan EV 2" class="gallery-img" tabindex="0" />
+                <img src="./gallary/macanevback.jpg" alt="Porsche Macan EV 3" class="gallery-img" tabindex="0" />
+                <img src="./gallary/macanevbackside.jpg" alt="Porsche Macan EV 4" class="gallery-img" tabindex="0" />
+                <img src="./gallary/macanevinside.webp" alt="Porsche Macan EV 5" class="gallery-img" tabindex="0" />
+                
+            </div>
+        </section>
+    </section>
+
+    <section id="pageReviews" style="display:none;">
+        <section class="reviews-section" aria-label="Отзывы покупателей">
+            <h2>Отзывы покупателей</h2>
+            <form id="reviewForm" aria-label="Форма добавления отзыва">
+                <input type="text" id="nameInput" placeholder="Ваше имя" required aria-required="true" />
+                <textarea id="reviewInput" rows="4" placeholder="Ваш отзыв" required aria-required="true"></textarea>
+
+                <div class="rating" role="radiogroup" aria-label="Рейтинг">
+                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <label for="star5" title="5 звезд">&#9733;</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 звезды">&#9733;</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 звезды">&#9733;</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="2 звезды">&#9733;</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 звезда">&#9733;</label>
+                </div>
+
+                <button type="submit">Добавить отзыв</button>
+            </form>
+            <div id="reviewsContainer" aria-live="polite" aria-relevant="additions">
+
+            </div>
+        </section>
+    </section>
+
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Увеличенное изображение">
+        <span class="modal-close" id="modalClose" role="button" aria-label="Закрыть">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Увеличенное изображение" />
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+    <nav aria-label="Основная навигация">
+        <button id="btnInfo" class="active" aria-current="page">Информация</button>
+        <button id="btnReviews">Отзывы</button>
+          <button onclick='addToCart({id:120, title:"Macan EV", price:150000, image:"macan ev.webp"})'
+                    class="cart-btn">В корзину</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>
